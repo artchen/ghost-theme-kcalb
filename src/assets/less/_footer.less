@@ -1,0 +1,101 @@
+// main: screen.less
+
+/* === Footer === */
+
+.site-footer {
+  clear: both;
+  width: 100%;
+  font-family: "Dosis", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", sans-serif;
+  height: auto;
+}
+.footer-wrapper {
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 30px 0px 50px 0px;
+  position: relative;
+  background: #555;
+	.subscribe {
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+	}
+	p {
+    text-align: center;
+    line-height: 180%;
+    font-size: 0.875em;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0px;
+		span {
+    	color: @primary_color;
+    }
+    a {
+	    color: rgba(255, 255, 255, 0.8);
+	    text-decoration: none;
+	    &:hover {
+		    color: @primary_color;
+	    }
+		}
+	}
+}
+.snslist {
+  display: block;
+  list-style: none;
+  padding-bottom: 5px;
+  text-align: center;
+
+	li {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+
+		a {
+	    display: inline-block;
+	    color: rgba(255, 255, 255, 0.9);
+	    font-size: 1.125em;
+	    -webkit-transition: all 0.1s;
+	    transition: all 0.1s;
+
+	    &.social-facebook:hover {
+		    color: #4965A0;
+	    }
+	    &.social-twitter:hover {
+			  color: #55ACEE;
+	    }
+	    &.social-googleplus:hover {
+		    color: #DD4C39;
+	    }
+	    &.social-pinterest:hover {
+		    color: #D8393D;
+	    }
+	    &.social-linkedin:hover {
+		    color: #1884BC;
+	    }
+	    &.social-flickr:hover {
+		    color: #E9006D;
+	    }
+	    &.social-github:hover {
+		    color: #4183C4;
+		  }
+			&.social-dribbble:hover {
+			  color: #EA4C89;
+			}
+			&.social-qq:hover {
+				color: #FFC028;
+			}
+			&.social-instagram:hover {
+			  color: #9E8470;
+			}
+			&.social-sina-weibo:hover {
+			  color: #FFB841;
+			}
+			&.social-renren:hover {
+			  color: #2974B5;
+			}
+			&.social-tumblr:hover {
+			  color: #395876;
+			}
+		}
+	}
+}

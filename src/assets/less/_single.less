@@ -1,0 +1,227 @@
+// main: screen.less
+
+/* === Single === */
+
+.single-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #eaeaea;
+  position: relative;
+}
+.single {
+  width: 800px;
+  margin: 0px auto;
+  padding: 30px 20px 60px 20px;
+
+  @media only screen and (max-width: 900px) {
+    width: 600px;
+  }
+  @media only screen and (max-width: 700px) {
+    width: 440px;
+  }
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+  }
+}
+.single-title {
+  font-size: 2em;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 700px) {
+    margin: 10px 0px 15px 0px;
+    font-size: 1.75em;
+  }
+  @media only screen and (max-width: 480px) {
+    margin: 10px 0px 15px 0px;
+    font-size: 1.5em;
+  }
+}
+.single-meta {
+  display: block;
+  text-align: center;
+  font-size: 0.8125em;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.4);
+
+  @media only screen and (max-width: 700px) {
+    margin: 10px 0px 20px 0px;
+  }
+}
+.single-content {
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 180%;
+  font-family: 'Noto Serif', "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", serif;
+
+  .fluid-width-video-wrapper {
+  	margin: 10px auto 30px auto;
+	}
+	h1, h2, h3, h4, h5, h6 {
+  	line-height: 300%;
+		font-family: "Lato", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", sans-serif;
+	}
+	h1 {
+  	font-size: 2.5em;
+		line-height: 150%;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 1.75em;
+      line-height: 150%;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 1.5em;
+      line-height: 150%;
+    }
+	}
+	h2 {
+  	font-size: 2.25em;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 1.5em;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 1.25em;
+    }
+	}
+	h3 {
+  	font-size: 2em;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 1.25em;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 1.125em;
+    }
+	}
+	h4 {
+    font-size: 1.75em;
+    @media only screen and (max-width: 700px) {
+      font-size: 1.125em;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 1em;
+    }
+	}
+	h5 {
+    font-size: 1.5em;
+    @media only screen and (max-width: 700px) {
+      font-size: 1.125em;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 1em;
+    }
+	}
+	h6 {
+    font-size: 1.25em;
+    @media only screen and (max-width: 700px) {
+      font-size: 1.125em;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 1em;
+    }
+	}
+
+	img {
+		display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+	}
+	p {
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 10px;
+	}
+	a {
+    text-decoration: underline;
+	}
+	blockquote {
+    padding: 10px 20px;
+    border-left: 5px solid #4c4c4c;
+    margin: 20px 0px;
+    background: #f7f7f7;
+	}
+	pre {
+    padding: 10px 20px;
+    margin: 20px 0px;
+    background: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+		code {
+	    padding: 0px;
+	    background: transparent;
+	    border: none;
+	    border-radius: 0px;
+		}
+	}
+	code {
+    padding: 2px 3px;
+    background: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+	}
+	hr {
+    width: 100%;
+    display: block;
+    margin: 50px 0px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 1px;
+	}
+	input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #999;
+    margin: 20px 0px;
+    padding: 0px 10px;
+    outline: none;
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
+	}
+}
+.single-footer {
+  padding-top: 30px;
+  font-size: 0.875em;
+  color: rgba(0, 0, 0, 0.5);
+
+	.single-footer-para {
+  	margin-top: 20px;
+		text-align: center;
+		a {
+			color: rgba(0, 0, 0, 0.7);
+			&:hover {
+				color: #77969A;
+			}
+		}
+	}
+}
+.single-tags {
+	display: block;
+}
+.single-share {
+  position: relative;
+
+  h4 {
+    font-weight: normal;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+  }
+}
+.single-share-list {
+  text-align: center;
+	a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    opacity: 0.7;
+    font-size: 1.125em;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+	}
+}

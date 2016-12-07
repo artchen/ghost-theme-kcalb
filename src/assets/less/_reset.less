@@ -1,0 +1,46 @@
+// main: screen.less
+
+/* === Reset === */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Lato", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", sans-serif;
+  color: @primary_text;
+  font-size: 1em;
+  background: #444;
+  min-height: 100%;
+}
+.cf {
+  zoom: 1;
+
+  &:after {
+    content: "";
+	display: table;
+	clear: both;
+  }
+  &:before {
+    content: "";
+	display: table;
+  }
+}
+a {
+  color: #4a4a4a;
+  -webkit-transition: all 0.24s;
+  transition: all 0.24s;
+  text-decoration: none;
+
+	&:hover {
+  	color: @primary_color;
+  }
+}
+.vertical {
+  display: table-cell;
+  vertical-align: middle;
+}

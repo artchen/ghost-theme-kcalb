@@ -1,0 +1,55 @@
+{{!< default}}
+        
+            <section class="site-navi">
+                <div class="site-description"><p>{{@blog.description}}</p></div>
+                <nav class="site-menu">
+                    <ul>
+                        
+                    </ul>
+                </nav>
+                <div class="site-description-bottom"></div>
+            </section>
+        </div>
+
+        <div class="header-bg">
+            <img src="{{@blog.cover}}" />
+        </div>
+
+    </header>
+
+<main class="container" role="main">
+
+    <section class="postlist cf">
+        
+    <article class="post-block post-taxonomy">
+        <a href="{{@blog.url}}">Home</a>
+        <span class="small-arrow-right icon-arrow-right"></span>
+        <span class="not-icon">Tags</span>
+        <span class="small-arrow-right icon-arrow-right"></span>
+        <a href="{{url}}">{{tag.name}}</a>
+    </article>
+
+    {{#foreach posts}}
+
+    <article class="{{post_class}} post-block">
+        <div class="hidden-content" style="display:none;">{{content}}</div>
+        <a href="{{url}}" class="post-link">
+            
+        </a>
+        <div class="post-wrapper">
+                <div class="post-content">
+                    <a href="{{url}}" class="post-title"><h3>{{title}}</h3></a>
+                    <time>{{date format="- MMM DD 'YY -"}}</time>
+                </div>
+            </div>
+    </article>
+
+    {{/foreach}}
+
+
+    {{pagination}}
+    
+    </section>
+
+    
+</main>

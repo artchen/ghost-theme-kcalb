@@ -1,0 +1,176 @@
+/* === Post List === */
+
+.container {
+  width: 100%;
+  position: relative;
+  padding: 0px 0px 30px 0px;
+  background: #555;
+}
+.postlist {
+  width: 800px;
+  margin: 0px auto;
+  padding: 30px 0px 0px 0px;
+  position: relative;
+
+  @media only screen and (max-width: 900px) {
+    width: 600px;
+  }
+  @media only screen and (max-width: 700px) {
+    width: 440px;
+  }
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+.post-block {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0px auto 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
+}
+.post-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  opacity: 0.9;
+  -webkit-transform: translateZ(0px);
+  background: transparent;
+
+	.post-image {
+    border: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    overflow: hidden;
+    background: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    img {
+	    display: block;
+	    width: 100%;
+	    height: auto;
+		}
+	}
+}
+.post-wrapper {
+  margin: 0px auto;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 1;
+}
+.post-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+
+  @media only screen and (max-width: 700px) {
+    padding: 15px;
+  }
+	p {
+  	margin-bottom: 20px;
+  }
+	.post-title {
+  	color: rgba(255, 255, 255, 0.9);
+		display: inline-block;
+		font-family: "Dosis", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", sans-serif;
+		&:hover {
+			color: @primary_color;
+		}
+	}
+	h3 {
+    font-weight: 300;
+    font-size: 1.125em;
+    text-align: center;
+    line-height: 180%;
+    display: inline-block;
+
+    @media only screen and (max-width: 700px) {
+      line-height: 150%;
+    }
+	}
+	time {
+    font-weight: 300;
+    display: block;
+    font-size: 0.75em;
+    text-align: center;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.01);
+    padding: 10px 0px;
+
+    @media only screen and (max-width: 700px) {
+      line-height: 150%;
+      padding: 6px 0px;
+    }
+	}
+}
+
+/* === Taxonomy === */
+
+.post-taxonomy {
+  padding: 20px 30px;
+
+	a, span.not-icon {
+  	color: rgba(255, 255, 255, 0.8);
+		font-family: "Dosis", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", sans-serif;
+
+		&:hover {
+			color: @primary_color;
+		}
+	}
+	span.small-arrow-right{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1.125em;
+    vertical-align: middle;
+	}
+}
+
+/* === Pagination === */
+
+.pagination {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+
+	.page-number {
+    display: none;
+	}
+	.older-posts,
+	.newer-posts {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    font-size: 0.8125em;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+
+    &:hover {
+	    background: rgba(0, 0, 0, 0.6);
+    }
+	}
+	.older-posts {
+  	float: right;
+  }
+}
